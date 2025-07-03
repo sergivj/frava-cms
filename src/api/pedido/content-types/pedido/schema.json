@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pedidos",
+  "info": {
+    "singularName": "pedido",
+    "pluralName": "pedidos",
+    "displayName": "Pedido"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "activityId": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "precio": {
+      "type": "decimal"
+    },
+    "fecha": {
+      "type": "datetime"
+    },
+    "stripePaymentId": {
+      "type": "string"
+    },
+    "Image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "estado": {
+      "type": "enumeration",
+      "enum": [
+        "pagado",
+        "cancelado"
+      ]
+    },
+    "stravaId": {
+      "type": "string"
+    },
+    "shippingAddress": {
+      "type": "string"
+    }
+  }
+}
